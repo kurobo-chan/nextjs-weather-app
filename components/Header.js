@@ -1,8 +1,8 @@
 import ThemeModeToggler from './ThemeModeToggler'
 import { Heading } from '@chakra-ui/react'
-import CustomIcon from './CustomIcon'
-import { Flex, IconButton, Spacer } from '@chakra-ui/react'
+import { Flex,  Spacer } from '@chakra-ui/react'
 import { ColumnMargin, RowMargin } from './StyleComponents'
+import Github from './GitHub'
 
 const Header = () => {
   return (
@@ -20,11 +20,7 @@ const Header = () => {
             <Spacer />
             <Flex color={`gray.400`} alignItems="center">
               <ThemeModeToggler />
-              <IconButton
-                aria-label="My Github"
-                bg={'none'}
-                icon={<CustomIcon icon="github" boxSize={6} />}
-              />
+              <Github/>
             </Flex>
           </Flex>
         </ColumnMargin>
